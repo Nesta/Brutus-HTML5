@@ -1,0 +1,132 @@
+/* About Default Styles
+ * ---------------------
+ * default.css is used to establish general rules, browser reset, or admin user interface styles.
+ *
+ * Browser Reset
+ * -------------
+ * For a more complete reset, go to http://developer.yahoo.com/yui/reset/
+
+*
+  margin: 0
+  padding: 0
+
+/* Clear Floats Without Structural Markup
+ * ---------------------------------------
+ * http://www.positioniseverything.net/easyclearing.html
+
+.clearfix
+  &:after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+
+/* Hides from IE-mac \
+
+* html .clearfix
+  height: 1%
+
+/* End hide from IE-mac
+/* clear classes
+
+
+/* "Skip to Main Content" link
+ * ---------------------------
+ * This link useful for both visually impaired people and those with mobility impairments
+ * who cannot use a mouse. http://www.webaim.org/techniques/css/invisiblecontent/
+
+#skip a
+  &:link, &:hover, &:visited
+    position: absolute
+    left: -10000px
+    top: auto
+    width: 1px
+    height: 1px
+    overflow: hidden
+  &:active, &:focus
+    position: static
+    width: auto
+    height: auto
+
+div
+  &.view div.views-admin-links
+    width: auto
+  &.block
+    position: relative
+    .edit
+      display: none
+      position: absolute
+      right: -20px
+      top: -5px
+      z-index: 40
+      padding: 3px 8px 0
+      font-size: 10px
+      line-height: 16px
+      background-color: white
+      border: 1px solid #cccccc
+      /*let's get fancy!
+      -moz-border-radius: 3px
+      -webkit-border-radius: 3px
+      -moz-box-shadow: 0 1px 3px #888888
+      -webkit-box-shadow: -1px 1px 2px #666666
+      a
+        display: block
+        border: 0
+        padding: 0
+        margin: 0
+    &:hover .edit
+      display: block
+
+/*.views-displays
+  float: none
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video 
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section 
+  display: block
+
+body 
+  line-height: 1
+
+ol, ul 
+  list-style: none
+
+blockquote, q 
+  quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after 
+  content: ''
+  content: none
+
+table 
+  border-collapse: collapse
+  border-spacing: 0
+
